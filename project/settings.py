@@ -25,7 +25,7 @@ SECRET_KEY = 'fs6a!i0+)ru6!3&%z9kqk)t*6*3r%8b@nypf!7uh!rtbt56zc%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://djangoairbnbclone.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['djangoairbnbclone.herokuapp.com','127.0.0.1']
 
 
 # Application definition
