@@ -153,7 +153,7 @@ LOCALE_PATHS = [BASE_DIR, "locale"]
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT =  os.path.join(BASE_DIR, "static" , "staticfiles")
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     '/var/www/static/',
