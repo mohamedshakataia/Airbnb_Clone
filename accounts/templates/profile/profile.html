@@ -15,15 +15,14 @@
 </div>
 <div class= 'row'>
     <div class ='col-md-4 mx-auto'>
-        {{profile.phone_number}}
-        <hr>
-        {{profile.user.username}}
-        <hr>
-        {{profile.address}}
-
-        <hr>
-        {{profile.user.email}}
-        <hr>
+      {{profile.user.username}}
+      <hr>
+      {{profile.phone_number}}
+      <hr>
+      {{profile.address}}
+      <hr>
+      {{profile.user.email}}
+ 
 
         <h5><a href="{% url 'accounts:profile_edit' %}">Edit Profile</a></h5>
         <h5><a href="{% url 'accounts:user_reservation' %}">My Reservation</a></h5>

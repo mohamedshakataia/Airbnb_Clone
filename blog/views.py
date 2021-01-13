@@ -36,4 +36,16 @@ class PostDetail(DetailView):
         return context
 
 
+    
+
+    def get_object(self, queryset=None):
+        object = super(PostDetail, self).get_object(queryset=queryset)
+        object.viewcount += 1
+        object.save()
+        return object
+
+
+
+
+
 

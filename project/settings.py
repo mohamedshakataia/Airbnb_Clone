@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -134,7 +134,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ar'
 
 TIME_ZONE = 'UTC'
 
@@ -144,6 +144,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+# LOCALE_PATHS = [os.path.join(BASE_DIR, "locale")]
+LOCALE_PATHS = [BASE_DIR, "locale"]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -169,3 +172,6 @@ EMAIL_HOST_USER = 'dj88co@gmail.com'
 EMAIL_HOST_PASSWORD = 'thbvcwozgiwmdgji'
 EMAIL_USE_TLS = True
 EMAIL_PORT = '587'
+
+
+# django.middleware.locale.LocaleMiddleware
